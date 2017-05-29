@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Minhas Compras - Esucri</string>
+    <string name="estabelecimento">Estabelecimento</string>
+    <string name="produto">Produto</string>
+    <string name="comprar">Comprar</string>
+    <string name="saudacao">Olá, Lucas Boeing Scarduelli</string>
+    <string name="codigo">Código</string>
+    <string name="referencia">Referência</string>
+    <string name="descricao">Descrição</string>
+    <string name="unidade_de_medida">Unidade de Medida</string>
+    <string name="preco">Preço</string>
+    <string name="quantidade_em_estoque">Quantidade em Estoque</string>
+    <string name="salvar">Salvar</string>
+    <string name="novo">Novo</string>
+    <string name="excluir">Excluir</string>
+    <string name="pesquisar">Pesquisar</string>
+    <string name="tipo">Tipo</string>
+    <string name="telefone">Telefone</string>
+</resources>

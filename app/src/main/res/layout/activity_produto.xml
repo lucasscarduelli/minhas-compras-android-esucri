@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.esucri.minhascompras.ProdutoActivity">
+
+
+    <TextView
+        android:id="@+id/label_codigo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="13dp"
+        android:text="@string/codigo" />
+
+    <EditText
+        android:id="@+id/edit_codigo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/label_codigo"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/label_referencia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/edit_codigo"
+        android:text="@string/referencia" />
+
+    <EditText
+        android:id="@+id/edit_referencia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/label_referencia"
+        android:ems="10"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/label_descricao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/edit_referencia"
+        android:text="@string/descricao" />
+
+    <EditText
+        android:id="@+id/edit_descricao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/label_descricao"
+        android:ems="10"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/label_unidade_medida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/edit_descricao"
+        android:text="@string/unidade_de_medida" />
+
+    <EditText
+        android:id="@+id/edit_unidade_medida"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/label_unidade_medida"
+        android:ems="10"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/label_preco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/edit_unidade_medida"
+        android:text="@string/preco" />
+
+    <EditText
+        android:id="@+id/edit_preco"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/label_preco"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/label_quantidade_estoque"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/edit_preco"
+        android:text="@string/quantidade_em_estoque" />
+
+    <EditText
+        android:id="@+id/edit_quantidade_estoque"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/label_quantidade_estoque"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/botao_salvar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:text="@string/salvar" />
+
+    <Button
+        android:id="@+id/botao_novo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/botao_salvar"
+        android:layout_toEndOf="@+id/botao_salvar"
+        android:text="@string/novo" />
+
+    <Button
+        android:id="@+id/botao_excluir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/botao_novo"
+        android:text="@string/excluir" />
+
+    <Button
+        android:id="@+id/botao_pesquisar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:text="@string/pesquisar"
+        android:layout_toEndOf="@+id/botao_excluir" />
+
+</RelativeLayout>
