@@ -16,7 +16,6 @@
     <string name="pesquisar">Pesquisar</string>
     <string name="tipo">Tipo</string>
     <string name="telefone">Telefone</string>
-<<<<<<< HEAD
     <string name="titulo_confirmacao_exclusao">Confirmação de Exclusão</string>
     <string name="mensagem_confirmacao_exclusao">Deseja realmente excluir?</string>
     <string name="botao_confirmar">Confirmar</string>
@@ -32,6 +31,4 @@
         <item>Mt</item>
     </string-array>
 
-=======
->>>>>>> 655521d344dc2a25a4238ef8354148c075a1adbe
 </resources>

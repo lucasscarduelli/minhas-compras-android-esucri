@@ -2,10 +2,17 @@ package br.com.esucri.minhascompras;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-<<<<<<< HEAD
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 import android.widget.TabHost;
-=======
->>>>>>> 655521d344dc2a25a4238ef8354148c075a1adbe
+import android.widget.Toast;
+
+import java.util.ArrayList;
+
+import br.com.esucri.minhascompras.adapter.CompraAdapter;
+import br.com.esucri.minhascompras.model.Compra;
 
 public class CompraActivity extends AppCompatActivity {
 
@@ -13,7 +20,6 @@ public class CompraActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_compra);
-<<<<<<< HEAD
 
         TabHost tabHost = (TabHost) findViewById(R.id.tab_host);
         tabHost.setup();
@@ -29,10 +35,28 @@ public class CompraActivity extends AppCompatActivity {
         tabHost.addTab(tabPendentes);
         tabHost.addTab(tabRealizadas);
 
+        criarListaPendentes();
     }
 
+    public void criarListaPendentes() {
 
-=======
+        ArrayList<Compra> comprasPendentes = new ArrayList<>();
+        for (int i=0; i < 20; i++) {
+            Compra compra = new Compra();
+            compra.setCompra("Compra " + (i+1));
+            compra.setEstabelecimento("Estabelecimento " + (i+1));
+            comprasPendentes.add(compra);
+        }
+
+        ListView listaComprasPendentes = (ListView) findViewById(R.id.lista_pendentes);
+        listaComprasPendentes.setAdapter(new CompraAdapter(this, comprasPendentes));
+        listaComprasPendentes.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Toast.makeText(getApplicationContext(), "Posicao: " + position, Toast.LENGTH_LONG).show();
+            }
+        });
+
     }
->>>>>>> 655521d344dc2a25a4238ef8354148c075a1adbe
+
 }

@@ -1,6 +1,5 @@
 package br.com.esucri.minhascompras;
 
-<<<<<<< HEAD
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -15,18 +14,10 @@ public class ProdutoActivity extends AppCompatActivity {
 
     EditText editUnidadeMedida;
 
-=======
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-
-public class ProdutoActivity extends AppCompatActivity {
-
->>>>>>> 655521d344dc2a25a4238ef8354148c075a1adbe
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_produto);
-<<<<<<< HEAD
 
         editUnidadeMedida = (EditText) findViewById(R.id.edit_unidade_medida);
     }
@@ -95,7 +86,4 @@ public class ProdutoActivity extends AppCompatActivity {
 
     }
 
-=======
-    }
->>>>>>> 655521d344dc2a25a4238ef8354148c075a1adbe
 }
